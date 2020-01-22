@@ -12,7 +12,7 @@ body {
   background-image: url('../assets/forest.jpg');
   background-position: left;
   background-size: cover;
-  /*background-repeat: none;*/
+  background-repeat: none;
   height: 100vh;
   font-family: 'Oxygen', sans-serif;
 }
@@ -20,14 +20,17 @@ body {
 /* Navbar Styling */
 
 nav {
+  background-color: hsl(0, 0%, 3.1%);
   display: flex;
   justify-content: space-between;
-  background-color: hsl(0, 0%, 3.1%);
+  
 }
 
 ul {
   display: flex;
 }
+
+/* Navbar links */
 
 ul li {
   padding: 1em;
@@ -37,8 +40,8 @@ ul li {
 }
 
 ul a {
-  text-decoration: none;
   color: whitesmoke;
+  text-decoration: none;
   font-size: 1.9rem;
   font-family: 'Advent Pro', sans-serif;
   letter-spacing: .3vw;
@@ -59,21 +62,21 @@ img {
 
 /* Styling for headings and transparent container. JR taught me how to do transparency. */
 
-.headingcontainer {
+.heading-container {
+  background-color: rgb(0, 0, 0, .9);
   margin: auto;
   margin-top: 3vh;
   padding: .5rem;
   width: 45vw;
   border-radius: 1rem;
-  background-color: rgb(0, 0, 0, .9);
 }
 
 h1 {
+  color: whitesmoke;
   text-align: center;
   font-family: 'Advent Pro', sans-serif;
   font-size: 4vw;
   letter-spacing: 1.5vw;
-  color: whitesmoke;
 }
 
 h2 {
@@ -93,12 +96,13 @@ h2 {
   padding: 1rem;
   width: 30ch;
   display: block;
+  background-color:hsl(0, 90.2%, 47.8%);
   text-decoration: none;
   text-align: center;
+  color: whitesmoke;
   font-size: 1rem;
   letter-spacing: .3vw;
-  background-color:hsl(0, 90.2%, 47.8%);
-  color: whitesmoke;
+  
 }
 
 .button:hover {
@@ -111,30 +115,34 @@ h2 {
 @media screen and (max-width: 767px) {
   ul a {
     text-decoration: none;
-    font-size: 1.25rem;
     color: white;
+    font-size: 1.6rem;
+  }
+
+  ul li {
+    padding: .4em;
   }
 
   img {
-    height: 30px;
+    height: 35px;
     width: auto;
-    margin-top: .9rem;
+    margin-top: .5rem;
     margin-left: .3rem;
   }
 
   h1 {
+    color: whitesmoke;
     text-align: center;
     font-family: 'Advent Pro', sans-serif;
     letter-spacing: 1.5vw;
     font-size: 7vw;
-    color: whitesmoke;
   }
 
   h2 {
     font-size: 5vw;
   }
 
-  .headingcontainer {
-    width: 58vw;
+  .heading-container {
+    width: 70vw;
   }
 }
