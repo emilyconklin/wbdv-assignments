@@ -63,7 +63,7 @@ img {
 /* Styling for headings and transparent container. */
 /* JR taught me how to do transparency. */
 
-.heading-container {
+.wrapper {
   background-color: rgb(0, 0, 0, .9);
   margin: auto;
   margin-top: 3vh;
@@ -127,7 +127,7 @@ h2 {
     font-size: 3vw;
   }
 
-  .heading-container {
+  .wrapper {
     width: 45vw;
   }
 }

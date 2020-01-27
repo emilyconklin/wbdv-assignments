@@ -1,0 +1,5 @@
+- great comments!
+- nice menu responsiveness and choice of background image
+- `type="css"` in your link tag can be safely omitted in 2020
+- all caps text should have normal capitalization; capitalize using `uppercase`. I leave it to you to find the property name.
+- the convention for naming containers like `heading-container` is `wrapper`
