@@ -1,0 +1,84 @@
+/* Body & font styles */
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nunito&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    line-height: 2.5ch;
+}
+
+/* Grid container */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 2rem auto auto;
+    margin: auto;
+    width: 35ch;
+    background-color: #eee;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+/* Grid item styling and row/column assignment */
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    background-image: url('../assets/river.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 10rem;
+}
+
+main {
+    padding-top: 3rem;
+    grid-column: 1 /4;
+    grid-row: 4 / 5;
+    padding: 1em;
+    text-align: center;
+}
+
+.profile-pic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url('../assets/jane-doe.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: #eee solid .5rem;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+}
+
+/* Footer column/row assignment & display flex for icon positioning */
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    border-top: solid .5px #ccc;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+/* Heading styling */
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    margin-top: 6.6rem;
+}
+
+/* Font icon styling */
+
+i {
+    font-size: 3em;
+    color: navy;
+}
