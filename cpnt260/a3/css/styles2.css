@@ -1,0 +1,172 @@
+/* Body Styling & Main Container */
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Overpass&display=swap');
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/horse4.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+}
+
+/* Heading Styles */
+
+h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 7vw;
+    color: white;
+    text-align: center;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin-bottom: .2rem;
+    text-align: center;
+}
+
+/* Logo Styling */
+
+img {
+    display: block;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+
+/* Form Styling */
+
+legend {
+    margin: auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+form {
+    background-color: rgba(0, 10, 37, 0.8);
+    color: white;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    max-width: 60ch;
+    margin: auto;
+    margin-top: 30vh;
+    border-radius: 1rem;
+}
+
+/* Form Grid & Submit Flex-Box Styling */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 17ch 1fr;
+}
+
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+label,
+input {
+    display: block;
+    margin: .5em 1em;
+    font-family: 'Overpass', sans-serif;
+}
+
+/* Input Styling 
+
+I got most of the input styling information from W3Schools.
+
+*/
+
+input {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: black;
+    border: 0;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    width: 70%;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+input[type=submit]:hover {
+    background-color: #683830;
+}
+
+input[type=button]:hover {
+    background-color: #683830;
+}
+
+input[type=text]:focus {
+    background-color: #DBD1AA;
+    border: 0;
+}
+
+input[type=tel]:focus {
+    background-color: #DBD1AA;
+    border: 0;
+}
+
+input[type=email]:focus {
+    background-color: #DBD1AA;
+    border: 0;
+}
+
+input[type=password]:focus {
+    background-color: #DBD1AA;
+    border: 0;
+}
+
+/* Media Queries */
+
+@media (orientation: portrait) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-column: 1 / 5;
+        margin: auto;
+        margin-top: 4rem;
+    }
+
+    h1 {
+        font-size: 3vh;
+        margin-top: .5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        margin: auto;
+        padding-top: 1rem;
+        height: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
