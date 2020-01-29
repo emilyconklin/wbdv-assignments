@@ -1,0 +1,4 @@
+- More spacing in your CSS makes it more readable.
+- Only one column is needed for this design since all elements are centred on the card. Having no column definitions make the code base smaller.
+- Tab length for indetation should be two space
+- `strong` tag is inappropriate since it's an inline element and bolds the text (mockup uses normal text). Use `p` tag or similar.
