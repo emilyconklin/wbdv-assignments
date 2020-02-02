@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie|Reenie+Beanie|Roboto&display=swap');
+
+/* Body and General Styles */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+
+  /* I learned this split background on a forum. */
+
+  background: linear-gradient(120deg, #29252a 50%, #ffed4b 50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header Styling */
+
+header {
+  height: 100%;
+  margin-bottom: 4rem;
+
+  background-image: linear-gradient(rgba(235, 4, 96, 0.7), rgb(222, 159, 50, 0.7)), url('../assets/IMG_1269(1).jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+
+  display: flex;
+}
+
+/* H1 Wrapper, paragraph and semantic tag styles */
+
+.h1-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.h1-wrapper p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Elsie', cursive;
+}
+
+/* Button Styling */
+
+.button {
+  margin: auto;
+  margin-top: 2rem;
+
+  padding: 1rem;
+  width: 30ch;
+
+  display: block;
+
+  font-size: 1rem;
+  letter-spacing: .3rem;
+
+  text-decoration: none;
+  text-align: center;
+
+  background-color: #0774ba;
+  color: whitesmoke;
+}
+
+.button:hover {
+  background-color: #ffed4b;
+  color: hsl(0, 0%, 3.1%);
+}
+
+/* Heading Styling */
+
+h2 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 3rem;
+
+  text-align: center;
+  letter-spacing: .2rem;
+
+  color: #0774ba;
+}
+
+h3 {
+  font-size: 8vw;
+  font-family: 'Elsie', cursive;
+
+  background-color: black;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+
+  font-size: .8rem;
+  letter-spacing: .2rem;
+}
+
+h5 {
+  font-size: 2rem;
+  font-family: 'Elsie', cursive;
+
+  color: rgb(252, 153, 170);
+  margin-bottom: .5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  letter-spacing: .2rem;
+}
+
+/* Navbar styling */
+
+/* Logo Styles */
+
+.logo {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
+
+.logo-a {
+  padding: 0;
+  margin: .5rem;
+}
+
+/* Navigation Styling */
+
+nav {
+  background-color: #29252a;
+
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: auto;
+}
+
+/* Nav Link Styles */
+
+nav a {
+  color: #ffed4b;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+
+  padding: 1rem;
+}
+
+nav a:hover {
+  color: whitesmoke;
+}
+
+/* Font Icon Styling */
+
+.fa-hand-peace {
+  font-size: 6rem;
+  margin-top: 1.5rem;
+}
+
+.fa-heart {
+  color: crimson;
+  font-size: .7rem;
+  padding-right: .5rem;
+}
+
+/* Team Image Card & Gallery Image Styling */
+
+.team-img,
+.gallery-img {
+  object-fit: cover;
+  display: block;
+
+  height: 100%;
+  width: 100%;
+}
+
+.eerie-img {
+  transform: scaleX(-1);
+  flex: 1 1 40vw;
+}
+
+/* Team Card Paragraph Styling & List Styling */
+
+p {
+  line-height: 170%;
+  margin-top: .4rem;
+}
+
+ul li {
+  list-style: none;
+  line-height: 170%;
+  margin-top: 1rem;
+
+}
+
+/* Main Styling */
+
+main {
+  color: black;
+  max-width: 90vw;
+  margin: auto;
+}
+
+/* Team Section Styling with Flex-box */
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20vw;
+
+  margin-bottom: 4rem;
+}
+
+.about {
+  padding: 2rem;
+  background-color: whitesmoke;
+
+  flex: 1 1 45vw;
+  min-width: 250px;
+}
+
+.team-img-wrapper {
+  flex: 1 1 45vw;
+  min-width: 250px;
+}
+
+/* Gallery Styling */
+
+.gallery {
+  margin: auto;
+  width: 90vw;
+  margin-bottom: 4rem;
+
+  background-color: whitesmoke;
+  border-bottom: 10vh solid black;
+
+  padding: 1rem;
+  letter-spacing: .2rem;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.gallery-wrapper {
+  text-align: center;
+  width: 90vw;
+  margin: auto;
+}
+
+.gallery-wrapper h1 {
+  text-align: center;
+  background-color: black;
+}
+
+/* Music Cards Wrapper */
+
+.music-wrapper {
+  margin: auto;
+  padding: 2rem;
+
+  background: #0774ba;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+}
+
+/* Music Cards Styling */
+
+.music {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  background-color: #29252a;
+
+  padding: 1rem;
+
+  border: .3rem solid rgb(75, 74, 74);
+  border-radius: 1rem;
+}
+
+/* Music card main text */
+
+.card-text {
+  color: white;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* Music Card Images */
+
+.music-img {
+  height: 200px;
+  width: 100%;
+  margin-top: .5rem;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: rgba(235, 4, 96, 0.7);
+
+  margin: auto;
+  padding: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+/* Footer text */
+
+.outro {
+  margin: auto;
+  padding: 1rem;
+
+  width: 100vw;
+}
+
+/* I had to make a new header because I ran out of semantic ones */
+
+.footer-header {
+  font-size: 4rem;
+  font-family: 'Elsie', cursive;
+  text-align: center;
+
+  margin: 0px;
+}
+
+/* Form Styling */
+
+form {
+  background-color: whitesmoke;
+  color: black;
+
+  padding: 1rem;
+
+  margin: auto;
+
+  border-radius: 1rem;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  grid-column: 1 / 3;
+
+  margin: auto;
+  margin-bottom: 1rem;
+
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 4rem;
+
+  letter-spacing: .2rem;
+  text-align: center;
+
+  color: #0774ba;
+}
+
+/* Form Grid */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 17ch 1fr;
+  grid-gap: .5rem;
+}
+
+label,
+input {
+  display: block;
+  margin-top: .5rem;
+  width: auto;
+}
+
+/* Submit Styling */
+
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Input Styling 
+I got most of the input styling information from W3Schools.
+*/
+
+input {
+  text-align: center;
+  margin: 0;
+
+}
+
+input[type=submit] {
+  background-color: #0774ba;
+  color: white;
+
+  border: 0;
+  padding: .5rem;
+  text-align: center;
+
+  width: 70%;
+  display: block;
+
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+input[type=submit]:hover {
+  background-color: #ffed4b;
+  color: black;
+}
+
+input[type=text]:focus {
+  background-color: rgb(246, 250, 141);
+  border: 0;
+}
+
+input[type=email]:focus {
+  background-color: rgb(246, 250, 141);
+  border: 0;
+}
+
+/* Text Area Styling */
+
+textarea {
+  height: 10rem;
+  padding: .2rem;
+
+  box-sizing: border-box;
+  border: 1px solid grey;
+
+  background-color: #f8f8f8;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+
+  resize: none;
+}
+
+textarea:focus {
+  background-color: rgb(246, 250, 141);
+  border: 0;
+}
+
+/* Media Queries */
+
+@media (orientation: portrait) {
+  nav {
+    justify-content: space-evenly;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    grid-column: 1 / 3;
+    margin: auto;
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .h1-wrapper p {
+    font-size: 1rem;
+  }
+
+  .fa-hand-peace {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .p-header {
+    font-size: 2.5rem;
+  }
+
+  .footer-header {
+    font-size: 2.5rem;
+  }
+}
